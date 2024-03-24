@@ -6,6 +6,7 @@ BhaiChat is a simple real-time chat application built with HTML, CSS, and JavaSc
 ## Usage
 
 To use BhaiChat, simply open command prompt and run `npm run dev` , in your web browser. Upon opening, you'll be prompted to enter your name. Once you've entered your name, you can start sending and receiving messages in real-time with other users who are also connected to the chat.
+![BhaiChat Preview](./public/preview.gif)
 
 ## Features
 
