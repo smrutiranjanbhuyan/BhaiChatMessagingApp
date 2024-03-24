@@ -1,4 +1,5 @@
 # BhaiChat
+![BhaiChat Preview](./public/preview.png)
 
 BhaiChat is a simple real-time chat application built with HTML, CSS, and JavaScript utilizing Socket.IO for real-time communication between clients and server.
 
