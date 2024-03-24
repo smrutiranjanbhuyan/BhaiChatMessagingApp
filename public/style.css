@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #2196f3,
+    #64b5f6
+  ); /* Use a gradient background */
+  font-family: "Roboto", sans-serif;
+}
+
+section.chat__section {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+  border-radius: 10px; /* Add border radius */
+}
+
+.brand {
+  padding: 20px;
+  background: #2196f3; /* Change brand background color */
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 10px; /* Rounded corners */
+  border-top-right-radius: 10px; /* Rounded corners */
+}
+
+.brand h1 {
+  font-size: 24px; /* Increase font size */
+  color: #fff;
+  margin-left: 10px;
+}
+
+.brand img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; /* Make image round */
+}
+
+.message__area {
+  height: 70vh; 
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+  padding-top: 20px; 
+  scroll-behavior: smooth; 
+}
+
+
+.message {
+  padding: 16px; /* Adjust padding */
+  border-radius: 10px; /* Add border radius */
+  margin-bottom: 20px; /* Adjust margin */
+  max-width: 70%; /* Limit message width */
+}
+
+.incoming {
+  background: #e3f2fd; /* Change incoming message background color */
+  color: #333;
+}
+
+.outgoing {
+  background: #fff; /* Change outgoing message background color */
+  color: #555;
+  margin-left: auto;
+}
+
+.message h4 {
+  margin: 0 0 6px; /* Adjust margin */
+  font-size: 14px;
+  color: #888;
+}
+
+#textarea {
+  width: calc(100% - 20px); /* Adjust width */
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px; /* Round textarea */
+  outline: none;
+  resize: none; /* Prevent resizing */
+}
+
+#buttonClicked {
+  padding: 12px 24px;
+  background-color: #1976d2; /* Change button color */
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Round button */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease; /* Add transition */
+}
+
+#buttonClicked:hover {
+  background-color: #1565c0; /* Darken button on hover */
+}
+.joiners {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.joiners h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+#joinedUsersList {
+  list-style: none;
+  padding: 0;
+}
+
+#joinedUsersList li {
+  font-size: 14px;
+  color: #666;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>BhaiChat</title>
+    <link rel="icon" type="image/x-icon" href="/fav.png">
+</head>
+
+<body>
+    <section class="chat_section">
+        <div class="brand">
+            <img src="/logo.jpeg" alt="" /> 
+            <h1>BhaiChat</h1>
+        </div>
+        <div class="message_area">
+            <!-- <div class="incoming message">
+            </div>
+            <div class="outgoing message">
+            </div> -->
+        </div>
+        <div class="sender">
+
+            <input type="text" id="textarea" placeholder="Write a message">
+            <button type="button" id="buttonClicked">Send</button>
+        </div>
+        <audio id="messageSound">
+            <source src="/ding_sms.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </section>
+    <section class="joiners">
+        <h2>Joiners.</h2>
+        <ul id="joinedUsersList"></ul>
+    </section>    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/clint.js"></script>
+</body>
+
+</html>
